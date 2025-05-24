@@ -8,7 +8,7 @@ export default function getPostMetadata(basePath) {
 
     // get the file data
 
-    const post = markdownPosts.map(() => {
+    const posts = markdownPosts.map(() => {
         const fileContents = fs.readFileSync(`${basePath}/${filename}`,
             'utf8'
         )
@@ -21,4 +21,6 @@ export default function getPostMetadata(basePath) {
             slug: filename.replace('.md', '')
         }
     })
+
+    return posts
 }
