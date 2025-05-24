@@ -26,13 +26,15 @@ export default function RootLayout({ children }) {
 
   let footer = (
     <footer>
-      
+
     </footer>
   )
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        {header}
         {children}
+        {footer}
       </body>
     </html>
   );
