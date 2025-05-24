@@ -20,13 +20,13 @@ export default function RootLayout({ children }) {
 
   let header = (
     <header>
-
+      <h1>Recipe App</h1>
     </header>
   )
 
   let footer = (
     <footer>
-
+      <p>&copy; Recipe App. 2025 </p>
     </footer>
   )
   return (
