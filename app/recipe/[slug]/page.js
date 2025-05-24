@@ -2,7 +2,11 @@
 
 const RecipePage = () => {
   return (
-    <div>Hello World</div>
+    <div>
+      <p>
+        Hello World
+      </p>
+    </div>
   )
 }
 
