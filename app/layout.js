@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Markdown Recipe App",
-  description: "Created by Rorisang",
+  title: "Recipe App",
+  description: "My Amazing Recipe App",
 };
 
 export default function RootLayout({ children }) {
