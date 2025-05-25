@@ -18,7 +18,17 @@ export const generateStaticParams = async () => {
   return posts.map((post) => ({slug: post.slug}))
 }
 
-const RecipePage = () => {
+export async function generateMetadata({params, searchParams}) {
+  const id = params?.slug ? ' • ' + params?.slug : ''
+  return {
+    title: `Recipe App ${id.replaceAll('_', ' ')}`
+  }
+}
+
+const RecipePage = (props) => {
+  const slug = props.params.slug;
+  const post = getPostContent(slug);
+  console.log(post)
   return (
     <div>
       <p>
