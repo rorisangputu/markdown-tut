@@ -13,7 +13,10 @@ function getPostContent(slug) {
   return matterRes;
 }
 
-
+export const generateStaticParams = async () => {
+  const posts = getPostMetadata('recipes')
+  return posts.map((post) => ({slug: post.slug}))
+}
 
 const RecipePage = () => {
   return (
