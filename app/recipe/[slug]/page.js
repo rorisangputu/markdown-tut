@@ -30,11 +30,11 @@ const RecipePage = (props) => {
   const post = getPostContent(slug);
   console.log(post)
   return (
-    <div>
-      <p>
-        Hello World
-      </p>
-    </div>
+    <main>
+      <article>
+        <Markdown>{post.content}</Markdown>
+      </article>
+    </main>
   )
 }
 
